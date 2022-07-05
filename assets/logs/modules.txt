@@ -1,0 +1,37 @@
+2022-05-26 07:40:49	?	?	Saved module info caches
+2022-05-26 07:40:50	?	?	Found 2 module(s) missing file: FieldtypeNumber => C:/wamp64/www/processwire-dev/site/modules/FieldtypeNumber/FieldtypeNumber.module, ProcessPage => C:/wamp64/www/processwire-dev/site/modules/ProcessPage/ProcessPage.module
+2022-05-26 07:40:50	guest	http://localhost/processwire-dev/http404/	Saved module info caches
+2022-05-26 07:40:50	guest	http://localhost/processwire-dev/http404/	Found 2 module(s) missing file: FieldtypeNumber => C:/wamp64/www/processwire-dev/site/modules/FieldtypeNumber/FieldtypeNumber.module, ProcessPage => C:/wamp64/www/processwire-dev/site/modules/ProcessPage/ProcessPage.module
+2022-05-26 07:40:50	guest	http://localhost/processwire-dev/http404/	Installed module 'ProcessRecentPages'
+2022-05-26 07:40:50	guest	http://localhost/processwire-dev/http404/	Saved module info caches
+2022-05-26 07:40:51	guest	http://localhost/processwire-dev/http404/	Found 2 module(s) missing file: FieldtypeNumber => C:/wamp64/www/processwire-dev/site/modules/FieldtypeNumber/FieldtypeNumber.module, ProcessPage => C:/wamp64/www/processwire-dev/site/modules/ProcessPage/ProcessPage.module
+2022-05-26 07:40:51	guest	http://localhost/processwire-dev/http404/	Saved module info caches
+2022-05-26 07:40:51	guest	http://localhost/processwire-dev/http404/	Found 2 module(s) missing file: FieldtypeNumber => C:/wamp64/www/processwire-dev/site/modules/FieldtypeNumber/FieldtypeNumber.module, ProcessPage => C:/wamp64/www/processwire-dev/site/modules/ProcessPage/ProcessPage.module
+2022-05-26 07:40:51	guest	http://localhost/processwire-dev/http404/	Installed module 'AdminThemeUikit'
+2022-05-26 07:40:51	guest	http://localhost/processwire-dev/http404/	Saved module info caches
+2022-05-26 07:40:51	guest	http://localhost/processwire-dev/http404/	Found 2 module(s) missing file: FieldtypeNumber => C:/wamp64/www/processwire-dev/site/modules/FieldtypeNumber/FieldtypeNumber.module, ProcessPage => C:/wamp64/www/processwire-dev/site/modules/ProcessPage/ProcessPage.module
+2022-05-26 07:41:35	guest	http://localhost/processwire-dev/processwire/login/	Saved module info caches
+2022-05-26 07:41:35	guest	http://localhost/processwire-dev/processwire/login/	Found 2 module(s) missing file: FieldtypeNumber => C:/wamp64/www/processwire-dev/site/modules/FieldtypeNumber/FieldtypeNumber.module, ProcessPage => C:/wamp64/www/processwire-dev/site/modules/ProcessPage/ProcessPage.module
+2022-05-26 07:41:35	guest	http://localhost/processwire-dev/processwire/login/	Installed module 'ProcessLogger'
+2022-05-26 07:41:35	guest	http://localhost/processwire-dev/processwire/login/	Saved module info caches
+2022-05-26 07:41:35	guest	http://localhost/processwire-dev/processwire/login/	Found 2 module(s) missing file: FieldtypeNumber => C:/wamp64/www/processwire-dev/site/modules/FieldtypeNumber/FieldtypeNumber.module, ProcessPage => C:/wamp64/www/processwire-dev/site/modules/ProcessPage/ProcessPage.module
+2022-05-26 07:41:35	guest	http://localhost/processwire-dev/processwire/login/	Installed module 'InputfieldIcon'
+2022-05-26 07:41:36	guest	http://localhost/processwire-dev/processwire/login/	Saved module info caches
+2022-05-26 07:41:36	guest	http://localhost/processwire-dev/processwire/login/	Found 2 module(s) missing file: FieldtypeNumber => C:/wamp64/www/processwire-dev/site/modules/FieldtypeNumber/FieldtypeNumber.module, ProcessPage => C:/wamp64/www/processwire-dev/site/modules/ProcessPage/ProcessPage.module
+2022-05-26 07:41:40	?	?	Saved module info caches
+2022-05-26 07:41:40	?	?	Found 2 module(s) missing file: FieldtypeNumber => C:/wamp64/www/processwire-dev/site/modules/FieldtypeNumber/FieldtypeNumber.module, ProcessPage => C:/wamp64/www/processwire-dev/site/modules/ProcessPage/ProcessPage.module
+2022-05-26 07:41:41	?	?	Saved module info caches
+2022-05-26 07:41:41	?	?	Found 2 module(s) missing file: FieldtypeNumber => C:/wamp64/www/processwire-dev/site/modules/FieldtypeNumber/FieldtypeNumber.module, ProcessPage => C:/wamp64/www/processwire-dev/site/modules/ProcessPage/ProcessPage.module
+2022-05-26 07:41:42	?	?	Saved module info caches
+2022-05-26 07:41:42	?	?	Found 2 module(s) missing file: FieldtypeNumber => C:/wamp64/www/processwire-dev/site/modules/FieldtypeNumber/FieldtypeNumber.module, ProcessPage => C:/wamp64/www/processwire-dev/site/modules/ProcessPage/ProcessPage.module
+2022-05-26 07:54:24	admin	http://localhost/processwire-dev/processwire/setup/template/edit?id=43	Installed module 'InputfieldTextTags'
+2022-05-26 07:54:24	admin	http://localhost/processwire-dev/processwire/setup/template/edit?id=43	Saved module info caches
+2022-05-27 13:04:26	admin	http://localhost/processwire-dev/processwire/module/	Installed module 'PageFrontEdit'
+2022-05-27 13:04:26	admin	http://localhost/processwire-dev/processwire/module/	Saved module info caches
+2022-06-13 10:37:58	admin	http://localhost/processwire-dev/processwire/module/	Installed module 'InputfieldRepeater'
+2022-06-13 10:37:58	admin	http://localhost/processwire-dev/processwire/module/	Installed module 'FieldtypeRepeater'
+2022-06-13 10:37:58	admin	http://localhost/processwire-dev/processwire/module/	Saved module info caches
+2022-06-13 10:38:30	admin	http://localhost/processwire-dev/processwire/setup/field/edit?id=99	Installed module 'InputfieldToggle'
+2022-06-13 10:38:30	admin	http://localhost/processwire-dev/processwire/setup/field/edit?id=99	Saved module info caches
+2022-06-20 14:27:23	admin	http://localhost/processwire-dev/processwire/setup/field/edit?id=106	Installed module 'InputfieldPageAutocomplete'
+2022-06-20 14:27:24	admin	http://localhost/processwire-dev/processwire/setup/field/edit?id=106	Saved module info caches

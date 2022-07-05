@@ -1,0 +1,7 @@
+2022-05-26 07:44:16	admin	http://localhost/processwire-dev/processwire/profile/	Profile saved - pass, admin_theme (WireLog)
+2022-06-13 10:43:47	admin	http://localhost/processwire-dev/processwire/setup/field/save?id=99	Deleted field "title" data in 0 row(s) from 0 page(s) using template "repeater_product". [page-by-page] (Fields)
+2022-06-19 09:40:51	admin	http://localhost/processwire-dev/processwire/page/edit/?id=1131	Populated initial created/modified dates for 'galery' (FieldtypeImage)
+2022-06-20 15:00:41	admin	http://localhost/processwire-dev/processwire/setup/field/save?id=105	Deleted field "product" data in 0 row(s) from 0 page(s) using template "repeater_basket_product_list". [page-by-page] (Fields)
+2022-06-20 15:03:22	admin	http://localhost/processwire-dev/processwire/setup/field/save?id=105	Deleted field "product_name" data in 0 row(s) from 0 page(s) using template "repeater_basket_product_list". [page-by-page] (Fields)
+2022-06-24 09:50:09	admin	http://localhost/processwire-dev/processwire/setup/field/save?id=105	Deleted field "product" data in 0 row(s) from 0 page(s) using template "repeater_basket_product_list". [page-by-page] (Fields)
+2022-07-01 12:28:37	admin	http://localhost/processwire-dev/processwire/setup/field/save?id=105	Deleted field "price" data in 0 row(s) from 0 page(s) using template "repeater_basket_product_list". [page-by-page] (Fields)
