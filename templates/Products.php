@@ -34,7 +34,7 @@
                 $product->number--;
                 if($product->number == 0){
                     //предупреждение или ожидание и удаление продукта
-                    $product->delete();
+                    $user->basket_product_list->remove($product);
                 }
                 $product->save();
                 $user->basket_product_list->save();
@@ -44,7 +44,7 @@
                 
         }
         //если запрос на продукт, которого пока нет в корзине
-        if(!$product){
+        else if(!$product){
             //если запрос на ++
             if($input->post["flagInc"] == 'plus'){
                 $new_product = $user->basket_product_list->getNew();
@@ -56,13 +56,21 @@
             //если запрос на --
             
         }
+        
   
         // $new_product = $user->basket_product_list->getNew();
         // $new_product->product_url = $pages->get("/products/a/")->path;
         // $new_product->save();
         // $user->basket_product_list->add($new_product);
     }
-    //сделать проверку на удаление
+    $user->price = 0;
+    if(count($user->basket_product_list) > 0){
+        foreach($user->basket_product_list as $product1){
+            // echo $product;
+            $user->price += $pages->get($product1->product_url)->price * $product1->number; 
+        }
+    }
+    //сделать проверку на удаление нужно
     $json = array (
         'product_name' => $product_name,
         'product_max_number' => $product_max_number,
@@ -71,6 +79,10 @@
     );
     echo json_encode ($json);
     return;
+ }
+ $isSaller = false;
+ if($user->hasRole('seller') || $user->hasRole('superuser')){
+    $isSaller = true;
  }
 ?>
 
@@ -88,6 +100,11 @@
             <button class="btn btn-primary minus">-</button>
             <span class="number"></span>
             <button class="btn btn-primary plus">+</button>
+            <?php if($isSaller) { ?>
+                <button class="btn btn-primary delete">Удалить</button>
+                <button class="btn btn-primary edit">Редактировать</button>
+            <?php } ?>
+             
         </div>
     </div>
 <?php } ?>

@@ -4,7 +4,6 @@
 
 unset($input->post);
 if($input->post["registration"] && $input->post["name"] != "" && $input->post["password"] != "" && $input->post["email"] != ""){
-    
     //Узнаем существует ли создаваемый пользователь
     $item = $users->get("name=" . $sanitizer->name($input->post["name"]).",email=".$sanitizer->email($input->post["email"]));
 
@@ -39,9 +38,10 @@ if($input->post["registration"] && $input->post["name"] != "" && $input->post["p
 }
 
 if($input->post["login"] && $input->post["login_name"] != "" && $input->post["login_password"] != ""){   
-    
+    $basket = clone $user->basket_product_list;
     if ($session->login($input->post["login_name"], $input->post["login_password"])){
         unset($input->post);
+        $user->basket_product_list = clone $basket; 
         header('Location: '.'http://localhost/processwire-dev/userpage');
         //Перенаправляет на страницу пользователя
     }else{

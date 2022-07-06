@@ -91,9 +91,9 @@ if($config->ajax) {
 ?>
 <?php 
 
-if($input->post["pay"]){
+if($input->post["pay"] && $user->hasRole('siteuser')){
     $success = false;
-    //бекап
+    
     $basket_product_list = clone $user->basket_product_list;
     $price = $user->price;
 
@@ -102,13 +102,28 @@ if($input->post["pay"]){
     $success = true;
 
     if($success){
-        //Очищаем корзину
+        //Удаляем купленные товары
+        $products = $pages->get('/products/');
         foreach($user->basket_product_list as $product){
-            $product->delete();
-            $user->basket_product_list->save();
+            $this_product = $pages->get($product->product_url);
+            if($this_product->number == $product->number){
+                $this_product->delete(true);
+            }
+            else{
+                $this_product->of(false);
+                echo $this_product->number - $product->number;
+                $this_product->number = $this_product->number - $product->number;
+                $this_product->save();
+            } 
+            //Очищаем корзину
+            $user->basket_product_list->remove($product);
+            
+           
         }
-        $user->price = 0;
+        $user->basket_product_list->save();
+        $products->save();
         $user->save();
+        $user->price = 0;
     }
     $array = array(
         "success" => $success

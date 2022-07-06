@@ -13,6 +13,7 @@
     <div class="container-sm col-md-6">
         <p>Name:<?=" " . $user->name?></p>
         <p>Email:<?=" " . $user->email?></p>
+        <?php var_dump($user->template->fields);?>
         <p>Roles:<?php foreach($user->roles as $userRole) echo " " . $userRole->name?></p>
     </div>
     <?php if($user->hasRole('seller') || $user->hasRole('superuser')){ ?>
