@@ -20,14 +20,16 @@ if($input->post["registration"] && $input->post["name"] != "" && $input->post["p
         $newUser->email = $email;
         $newUser->addRole("siteuser");
         $newUser->save();
+
+        //создаем куки и читаем в header.php
+        $input->cookie->set('name', $user->name,86400); 
+        $input->cookie->set('pass', $user->passsword,86400);
         
         if ($user->isLoggedin()){
             unset($input->post);
             unset($__POST);
             header('Location: '.'http://localhost/processwire-dev/userpage');
             //Перенаправляет на страницу пользователя
-        }else{
-        
         }
 
     }else{
@@ -41,6 +43,10 @@ if($input->post["login"] && $input->post["login_name"] != "" && $input->post["lo
     $basket = clone $user->basket_product_list;
     if ($session->login($input->post["login_name"], $input->post["login_password"])){
         unset($input->post);
+        
+        $input->cookie->set('name', $user->name,86400); 
+        $input->cookie->set('pass', $user->passsword,86400);
+
         $user->basket_product_list = clone $basket; 
         header('Location: '.'http://localhost/processwire-dev/userpage');
         //Перенаправляет на страницу пользователя
@@ -87,14 +93,34 @@ if (isset($_GET['code'])) {
             $userInfo = $userInfo['response'][0];
             $result = true;
             var_dump($userInfo);
-            //Непосредственно аунтификация
-            // if($user->hasRole("siteuser")){
-            //     $session->logout();
-            //     // $session->start();
-            //     if($users->find("id=".$userInfo['response'][0]['id'])){
-                    
-            //     }
-            // }
+
+            // Непосредственно аунтификация
+            if($user->hasRole("siteuser") || $user->hasRole("superuser")){
+                $session->logout();
+                // echo 0;
+            }
+            if($users->get("name=".$userInfo['id'])->id != 0){
+                echo 3;
+                $thisUser = $users->get("vk_id=".$userInfo['id']);
+                if($session->forceLogin($thisUser)){
+                    // $session->redirect('/');
+                    // echo 1;
+                }
+            }
+            else{
+                echo $userInfo['first_name'];
+                echo $userInfo['last_name'];
+                $newUser = $users->add(implode(' ', [$userInfo['first_name'], $userInfo['last_name']]) );
+                echo $newUser->name;
+                $newUser->setOutputFormatting(false);
+                $newUser->vk_id = $userInfo['id'];
+                $newUser->addRole("siteuser");
+                $newUser->save();
+                
+                // $session->redirect('/');
+                echo 2;
+                
+            }
             // if($result)
             // header('Location: /processwire-dev/');
             

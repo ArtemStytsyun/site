@@ -2,8 +2,12 @@
     
 
 
-
-
+    if(isset($input->cookie->name) && isset($input->cookie->pass)){
+        $session->login($input->cookie->name, $input->cookie->pass);
+        $session->redirect('/processwire-dev/');
+    }
+    // $user->template->fields->add("vk_id");
+    // $user->template->fields->save();
     //Определяем под какой ролью сидит пользователь - если гость, даем возможность регстрации и входа, если другой, то предлагаем выйти из уетной записи
     $flagLogin = false; 
     foreach($user->roles as $userRole){ 
