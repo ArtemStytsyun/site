@@ -1,3 +1,10 @@
+<?php 
+    // require './PhpWord/PhpWord.php';
+    // use PhpOffice\PhpWord;
+    // $word = new PhpWord();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,12 +16,12 @@
 </head>
 <body>
     <?php include "./header.php"?>
-
     <div class="container-sm col-md-6">
         <p>Name:<?=" " . $user->name?></p>
         <p>Email:<?=" " . $user->email?></p>
         <p>Roles:<?php foreach($user->roles as $userRole) echo " " . $userRole->name?></p>
     </div>
+
     <?php if($user->hasRole('seller') || $user->hasRole('superuser')){ ?>
         <a href="http://localhost/processwire-dev/add_product" class="btn btn-primary">Добавить новый товар на сайт</a>
     <?php } ?>

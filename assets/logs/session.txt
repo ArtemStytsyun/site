@@ -300,3 +300,17 @@
 2022-07-13 05:38:35	admin	http://localhost/processwire-dev/processwire/login/	Successful login for 'admin'
 2022-07-13 05:56:16	admin	http://localhost/processwire-dev/userpage/	Logout for 'admin'
 2022-07-13 05:56:24	admin	http://localhost/processwire-dev/registrationlogin/	Successful login for 'admin'
+2022-07-17 03:17:23	admin	http://localhost/processwire-dev/registrationlogin/	Successful login for 'admin'
+2022-07-17 03:17:34	admin	http://localhost/processwire-dev/userpage/	Logout for 'admin'
+2022-07-17 03:18:05	admin	http://localhost/processwire-dev/registrationlogin/	Successful login for 'admin'
+2023-03-13 12:33:14	guest	http://localhost/processwire-dev/processwire/login/	Error: Failed login for 'admin' - Invalid password
+2023-03-13 12:33:19	guest	http://localhost/processwire-dev/processwire/login/	Error: Failed login for 'admin' - Invalid password
+2023-03-13 12:33:20	guest	http://localhost/processwire-dev/processwire/login/	Error: Failed login for 'admin' - Blocked login attempt
+2023-03-13 12:33:33	guest	http://localhost/processwire-dev/processwire/login/	Error: Failed login for 'admin' - Invalid password
+2023-03-27 14:17:09	guest	http://localhost/processwire-dev/registrationlogin/	Error: Failed login for 'admin' - Invalid password
+2023-03-27 14:17:19	guest	http://localhost/processwire-dev/registrationlogin/	Error: Failed login for 'admin' - Invalid password
+2023-03-27 14:18:14	guest	http://localhost/processwire-dev/registrationlogin/	Error: Failed login for 'admin' - Invalid password
+2023-03-27 14:18:28	guest	http://localhost/processwire-dev/registrationlogin/	Error: Failed login for 'admin' - Invalid password
+2023-03-27 14:22:00	guest	http://localhost/processwire-dev/registrationlogin/	Error: Failed login for 'admin' - Invalid password
+2023-03-27 14:22:10	guest	http://localhost/processwire-dev/registrationlogin/	Error: Failed login for 'admin' - Invalid password
+2023-03-27 14:22:20	guest	http://localhost/processwire-dev/registrationlogin/	Error: Failed login for 'nedillerkotikov-gmail.com' - Unknown user

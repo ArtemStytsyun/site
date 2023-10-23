@@ -1,7 +1,15 @@
 <?php 
     
+    // $mes = wireMail(); 
+    // $send_result = $mes->to('nedillerkotikov@mail.ru')
+    //     ->from('artem_stytsyun@mail.ru')
+    //     ->subject('Запись на консультацию')
+    //     ->body('Запись на консультацию')
+    //     ->bodyHTML(амогус) //Тут должна быть нормальная отправка
+    //     ->send();
+    // echo $send_result;
 
-
+    
     if(isset($input->cookie->name) && isset($input->cookie->pass)){
         $session->login($input->cookie->name, $input->cookie->pass);
         $session->redirect('/processwire-dev/');
@@ -40,6 +48,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+<script defer="defer" src="./site/templates/dist/js/chunk-vendors.c9e2f682.js"></script>
+<script defer="defer" src="./site/templates/dist/js/app.b04a9153.js">
+
+</script>
+<link href="./site/templates/dist/css/chunk-vendors.fd927b8d.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,7 +66,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body class="d-flex flex-column">
-    <p><?php if($user->price > 0) echo "В корзине: " . $user->price . " руб.";?></p>
+    <div id="app"></div>
+    <p><?php
+    // phpinfo();
+    var_dump(ini_get_all());
+    echo phpversion();
+
+    // ini_set("SMTP","ssl://smtp.gmail.com");
+    // ini_set("smtp_port","465");
+    // ini_set("sendmail_path","C:\wamp64\sendmail\sendmail.exe -t -i");
+
+    $to       = 'test-5d0kk8at7@srv1.mail-tester.com';
+    $subject  = 'Testing sendmail.exe';
+    $message  = 'Hi, you just received an email using sendmail!';
+    // $headers  = 'From: sender@gmail.com' . "\r\n" .
+    //             'Reply-To: sender@gmail.com' . "\r\n" .
+    //             'MIME-Version: 1.0' . "\r\n" .
+    //             'Content-type: text/html; charset=iso-8859-1' . "\r\n" .
+    //             'X-Mailer: PHP/' . phpversion();
+                
+    // if(mail($to, $subject, $message))
+    //     echo "Email sent";
+    // else
+    //     echo "Email sending failed";
+    
+    
+    
+    // ?></p>
     <!-- header -->
     <header class="sticky-top bg-primary">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary container-sm col-md-10">

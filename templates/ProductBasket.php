@@ -62,10 +62,7 @@ if($config->ajax) {
                 
             }
     
-            // $new_product = $user->basket_product_list->getNew();
-            // $new_product->product_url = $pages->get("/products/a/")->path;
-            // $new_product->save();
-            // $user->basket_product_list->add($new_product);
+
         }
         //сделать проверку на удаление
         //пересчитываем общую стоиость корзины
